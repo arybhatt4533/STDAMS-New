@@ -15,10 +15,46 @@ body {
 }
 h1 {
     text-align: center;
-    color: #00ffe7;
-    margin-bottom: 24px;
-    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Sabhi bright colors ka mix */
+    background: linear-gradient(
+        to right, 
+        #ff0000, /* Red */
+        #ffea00, /* Yellow */
+        #00ff00, /* Green */
+        #00eaff, /* Cyan */
+        #0044ff, /* Blue */
+        #ff00ff, /* Pink */
+        #ff0000  /* Back to Red for loop */
+    );
+    
+    /* Isse gradient text ke andar dikhega */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Size badhana zaroori hai animation ke liye */
+    background-size: 200% auto;
+    
+    /* Animation: 3 second mein colors move honge */
+    animation: rainbowShift 3s linear infinite;
+    
+    /* Bina neon ke 3D look ke liye shadow */
+    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.8));
 }
+
+/* Colors ko slide karne wali animation */
+@keyframes rainbowShift {
+    to {
+        background-position: 200% center;
+    }
+}
+
 .dashboard {
     display: flex;
     justify-content: space-between;
