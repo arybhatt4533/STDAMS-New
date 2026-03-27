@@ -17,7 +17,6 @@ parameters such as:
 Altitude 
 Velocity 
 Signal Strength 
-Orbital Drift 
 The problem is that: 
 Satellites generate huge volumes of data every second 
 Manual monitoring of this data is time‑consuming and inefficient 
